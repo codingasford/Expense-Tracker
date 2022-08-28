@@ -1,0 +1,71 @@
+header {
+    color: green;
+    font-size: 40px;
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 10px;
+}
+
+h1 {
+    color: lightgreen;  
+    -webkit-text-stroke: 1px black; /* border */
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+#gridContainer1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 50px;
+    
+}
+
+#grid1Item1 {
+    justify-self: end;
+}
+
+#grid1Item2 {
+    justify-self: start;
+}
+
+#grid1Item3 {
+    justify-self: end;
+}
+
+#grid1Item4 {
+    justify-self: start;
+    white-space: nowrap;
+}
+
+#gridContainer2 {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 0.25fr;
+    grid-auto-rows: 0.035fr;
+    height: 1000px;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    
+}
+
+.grid2Item {
+    background-color: lightgray;
+    border: 1.25px solid black;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.x {
+  background-image: url(./redx.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+
+#formLabel {
+    font-size: 25px;
+    
+}

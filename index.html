@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <header>Expense Tracker</header>
+    <h1>Add New Item:</h1>
+    <form class="form" onsubmit="return addExpense();">
+        <div id="gridContainer1">
+            <div id="grid1Item1">
+                <label class="formLabel" for="typeInput">Type: </label>
+                <select name="typeInput">
+                    <optgroup label="Card">
+                        <option value="credit">Credit</option>
+                        <option value="debit">Debit</option>
+                    </optgroup>
+                    <optgroup label="Other">
+                        <option value="cash">Cash</option>
+                    </optgroup>
+                </select>
+           </div>
+           <div id="grid1Item2">
+                <label class="formLabel" for="nameInput">Name: </label>
+                <input id="nameInput" name="nameInput" type="text" required="true">
+           </div>
+           <div id="grid1Item3">
+            <label class="formLabel" for="dateInput">Date: </label>
+            <input id="dateInput" name="dateInput" type="date" style="width: 165px" required="true">
+           </div>
+            <div id="grid1Item4">
+                <label class="formLabel" for="amountInput">Amount: </label>
+                <input id="amountInput" name="amountInput" type="number" min="0" max="1000000" value="1" step="1" required="true">
+            </div>
+        </div>
+        <div style="text-align: center; padding-top: 20px">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <br>
+    <div id="gridContainer2">
+        <div class="grid2Item">Type</div>
+        <div class="grid2Item">Name</div>
+        <div class="grid2Item">Date</div>
+        <div class="grid2Item">Amount</div>
+        <div class="grid2Item"> </div> <!-- Empty Corner Box -->
+        
+    
+        
+        
+        
+        
+        
+        
+    </div>
+</body>
+</html>
